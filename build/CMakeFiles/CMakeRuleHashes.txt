@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+4d85c13b3839b5f49821e3615b5a9dec com.github.dgxinfinity.vault-project_valac.stamp
+c97a71b0219433d2ad051ed09fdbcf51 src/hello-again.c
