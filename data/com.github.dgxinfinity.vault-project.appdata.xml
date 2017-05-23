@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2017 Your Name <ddg2goodwin@gmail.com> -->
+<component type="desktop">
+  <id>com.github.dgxinfinity.vault-project.desktop</id>
+  <metadata_license>CC0</metadata_license>
+  <name>ESP Flasher Alpha</name>
+  <summary>ESP Flasher based on the esptool terminal program</summary>
+  <description>
+    <p>This is a program used to flash .bin files onto your ESP 8266. It uses the esptool backend to do this. It is in Alpha Stage.</p>
+  </description>
+</component>
