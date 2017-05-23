@@ -7,5 +7,5 @@ Exec=com.github.dgxinifnity.vault-project
 Icon=application-default-icon
 Terminal=false
 Type=Application
-X-GNOME-Gettext-Domain=hello-again
-Keywords=Hello;World;Example;
+X-GNOME-Gettext-Domain=ESP-Flasher
+Keywords=ESP;Flaher;Espressif;Vault
