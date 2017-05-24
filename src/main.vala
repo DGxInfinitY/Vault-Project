@@ -248,7 +248,7 @@ class PackBox : Window {
       return 0;
 
     } else {
-      stderr.printf("usage: ./vbox <num> where <num> is 1, 2, or 3.\n");
+      stderr.printf("usage: ./main <num> where <num> is 1, 2, or 3.\n");
       /* This just does cleanup in GTK and exits with an exit status
        * of 1. */
       Process.exit (1);
@@ -264,6 +264,10 @@ void on_open_clicked () {
                                 FileChooserAction.OPEN,
                                 "_Cancel", ResponseType.CANCEL,
                                 "_Open", ResponseType.ACCEPT);
+                                // We are only interested in bins:
+  FileFilter filter = new FileFilter ();
+  file_chooser.set_filter (filter);
+  filter.add_mime_type ("application/octet-stream");
   if (file_chooser.run () == ResponseType.ACCEPT) {
     open_file (file_chooser.get_filename ());
   }
@@ -272,9 +276,8 @@ void on_open_clicked () {
 
 void open_file (string filename) {
   try {
-    string text;
-    FileUtils.get_contents (filename, out text);
-    //text_view.buffer.text = text;
+
+
   } catch (Error e) {
     stderr.printf ("Error: %s\n", e.message);
   }
