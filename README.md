@@ -9,4 +9,4 @@ and
 <code>Gtk3</code>
 
 # Note
-If you are unable to open the executable, open it in a terminal after allowing execution permission, this will allow you to select run time, try in mode 1, modes 2, and 3 are similar but they do not work. This will be fixed in the next compiled binary.
+If you are unable to open the executable, open it in a terminal after allowing execution permission, this will allow you to select run time, try in mode 1; modes 2, and 3 are similar but they do not work. This will be fixed in the next compiled binary.
