@@ -1,5 +1,6 @@
 using Gtk;
 Window window;
+TextView text_view;
 
 static Box make_box (bool homogeneous, int spacing, bool expand, bool fill, int padding) {
   Box box;
@@ -27,6 +28,29 @@ static Box make_box (bool homogeneous, int spacing, bool expand, bool fill, int 
   box.pack_start(button, expand, fill, padding);
   button.show();
 
+
+  return box;
+}
+
+static Box make_box2 (bool homogeneous, int spacing, bool expand, bool fill, int padding) {
+  Box box;
+
+  text_view = new TextView ();
+  text_view.editable = false;
+  text_view.cursor_visible = false;
+
+  var scroll = new ScrolledWindow (null, null);
+  scroll.set_policy (PolicyType.AUTOMATIC, PolicyType.AUTOMATIC);
+  scroll.add (text_view);
+
+  /* Create a new Box with the appropriate orientation
+   * and spacing settings */
+  box = new Box(Orientation.HORIZONTAL, spacing);
+  /* Set whether all child widgets be the same size. */
+  box.set_homogeneous(homogeneous);
+
+
+
   return box;
 }
 
@@ -50,7 +74,7 @@ class PackBox : Window {
      * into. This allows us to stack the horizontal boxes filled with
      * buttons one on top of the other in this vbox. */
     var box1 = new Box(Orientation.VERTICAL, 0);
-
+    //var box2 = new Box(Orientation.VERTICAL, 0);
     /* Which example to show. These correspond to the pictures above. */
     switch (which) {
       case 1:
@@ -72,19 +96,11 @@ class PackBox : Window {
         /* Show the labels. */
         label.show();
         label2.show();
-
         /* Call our make box function - homogeneous = false, spacing = 0,
          * expand = false, fill = false, padding = 0 */
-        var box2 = make_box(false, 0, false, false, 0);
-        //box1.pack_start(box2, false, false, 0);
-        //box2.show();
-
-        /* Call our make box function - homogeneous = false, spacing = 0,
-         * expand = true, fill = false, padding = 0 */
-        box2 = make_box(false, 0, true, false, 0);
+        var box2 = make_box2(false, 5, false, false, 0);
         box1.pack_start(box2, false, false, 0);
-        box2.show();
-
+        //box2.show();
         /* Args are: homogeneous, spacing, expand, fill, padding */
         //box2 = make_box(false, 0, true, true, 0);
         //box1.pack_start(box2, false, false, 0);
@@ -99,6 +115,15 @@ class PackBox : Window {
          * they'll be stacked vertically. */
         box1.pack_start(separator, false, true, 5);
         separator.show();
+
+
+
+        //
+        box2 = make_box(false, 0, true, false, 0);
+        box1.pack_start(box2, false, false, 0);
+        box2.show();
+
+        //box2
 
 
 
@@ -276,9 +301,32 @@ void on_open_clicked () {
 
 void open_file (string filename) {
   try {
-
+    //exec ("/usr/bin/python -O /usr/share/wicd/gtk/wicd-client.py $@");
 
   } catch (Error e) {
     stderr.printf ("Error: %s\n", e.message);
   }
 }
+
+/*
+static gboolean data_ready(GIOChannel *channel, GIOCondition cond, gpointer data)
+{
+  FILE *fp = data;
+  char line[256];
+
+  if (fgets(line, sizeof line, fp)) {
+      gtk_text_buffer_get_end_iter (buffer, &iter);
+      gtk_text_buffer_insert (buffer, &iter, line, -1);
+      return TRUE;
+  }
+  else {
+      fclose(fp);
+      return FALSE;
+  }
+}
+
+void populate(){
+  FILE *fp = popen("top -b", "r");
+  GIOChannel *channel = g_io_channel_unix_new(fileno(fp));
+  g_io_add_watch(channel, G_IO_IN, data_ready, fp);
+}*/
