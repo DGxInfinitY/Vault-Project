@@ -7,7 +7,7 @@ This is built on:
 
 <code>Vala 0.34.8</code> and <code>Gtk3</code> And on an AMD64 Linux box(elementary OS)
 
-Anyone willing to compile a binary for different platforms can email me and I will send instructions and add it to this repository.asdf
+Anyone willing to compile a binary for different platforms can email me and I will send instructions and add it to this repository.
 
 # Note
 To run compiled binary you must be running an AMD64 linux computer and must have the "espflasher.ui" file in the same
