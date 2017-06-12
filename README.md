@@ -24,4 +24,6 @@ the command:
 <code>valac --pkg gtk+-3.0 espflasher.vala -v</code>
 
 If you're on MacOS you can install vala and it's compiler using homebrew: <code>brew install vala</code> in your terminal
-If you're on Windows you can install vala and it's compiler by following the info on this page: https://wiki.gnome.org/Projects/Vala/ValaOnWindows
+
+If you're on Windows you can install vala and it's compiler by following the info on this page: 
+https://wiki.gnome.org/Projects/Vala/ValaOnWindows
