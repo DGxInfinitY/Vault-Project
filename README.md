@@ -15,9 +15,12 @@ directory as the compiled binary.
 
 # How to Compile for your platform
 I would recommend compiling using valac. Open a terminal in the location of the espflasher.vala and type:
+
 <code>valac --pkg gtk+-3.0 espflasher.vala</code>
+
 This should complete with no errors, however to see what is really going on it could be usefull to add the -v option to 
 the command:
+
 <code>valac --pkg gtk+-3.0 espflasher.vala -v</code>
 
 If you're on MacOs you can install vala and it's compiler using <code>brew install vala</code> in your terminal
