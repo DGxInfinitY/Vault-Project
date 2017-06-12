@@ -23,6 +23,14 @@ the command:
 
 <code>valac --pkg gtk+-3.0 espflasher.vala -v</code>
 
+If you're on a Debian based distro you can install vala by running these commands:
+
+<code>sudo add-apt-repository ppa:vala-team</code>
+
+<code>sudo apt update && sudo apt install valac valac-dbg</code>
+
+You can find how to install valac by doing a google search.
+
 If you're on MacOS you can install vala and it's compiler using homebrew: <code>brew install vala</code> in your terminal
 
 If you're on Windows you can install vala and it's compiler by following the info on this page: 
