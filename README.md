@@ -11,7 +11,7 @@ Anyone willing to compile a binary for different platforms can email me and I wi
 
 # Note
 To run compiled binary you must be running an AMD64 linux computer and must have the "espflasher.ui" file in the same
-directory as the compiled binary.
+directory as the compiled binary. The progarm must be run from terminal...
 
 # How to Compile for your platform
 I would recommend compiling using valac. Open a terminal in the location of the espflasher.vala and type:
