@@ -29,7 +29,7 @@ If you're on a Debian based distro you can install vala by running these command
 
 <code>sudo apt update && sudo apt install valac valac-dbg</code>
 
-You can find how to install valac by doing a google search.
+You can find how to install valac on your distro with a google search. ie "How to install vala on <InsertDistroHere>"
 
 If you're on MacOS you can install vala and it's compiler using homebrew: <code>brew install vala</code> in your terminal
 
