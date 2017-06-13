@@ -2,7 +2,7 @@
 This is a Public test Repo for ESP Flasher.
 
 This Repo contains an Alpha version of the ESP Flasher Program developed by Donovan Goodwin (DGxInfinitY).
-This version of ESP Flasher is unusable as of Version 0.3.
+This version of ESP Flasher is unusable as of Version 0.3.1.
 
 ESP Flasher is built on:
 
@@ -38,7 +38,8 @@ If you're on MacOS you can install vala and it's compiler using homebrew: <code>
 If you're on Windows you can install vala and it's compiler by following the info on this page:
 https://wiki.gnome.org/Projects/Vala/ValaOnWindows
 
-# Roadmap
-I am wanting to have the program in a working state by the end of this month if at all possible, it is going to be hard with
-my birthday being this month as well as my sister's, grandpa's, and brother's but I will try my hardest to get the back end
-functioning this month.
+# To Do list
+1. Getting the About Dialog to open after pressing the about button(It may also be better to get it to open from a seperate Ui file)
+2. Getting File Manager and Board Selector to look in the right places for device as well as filtering the selectable files.
+3. Converting the esptool python program to Linux executable for greatest portability as well as ease of use.
+4. Implementing a way for us to hook into the esptool program.

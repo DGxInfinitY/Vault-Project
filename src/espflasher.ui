@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generated with glade 3.18.3 -->
+<!-- ESPFlasher Interface Version 0.3.1 -->
 <interface>
   <requires lib="gtk+" version="3.12"/>
   <object class="GtkWindow" id="window1">
@@ -53,7 +54,7 @@
             <property name="can_focus">False</property>
             <property name="halign">center</property>
             <property name="valign">center</property>
-            <property name="label" translatable="yes">Alpha v0.3</property>
+            <property name="label" translatable="yes">Alpha v0.3.1</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -260,13 +261,14 @@
             <child>
               <object class="GtkButton" id="about_button">
                 <property name="label">gtk-about</property>
+                <property name="name">about_button</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="use_stock">True</property>
                 <property name="yalign">0.50999999046325684</property>
                 <property name="always_show_image">True</property>
-                <signal name="clicked" handler="GtkAboutDialog" swapped="no"/>
+                <signal name="clicked" handler="about_button_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -311,7 +313,7 @@
     <property name="transient_for">window1</property>
     <property name="attached_to">about_button</property>
     <property name="program_name">ESP Flasher</property>
-    <property name="version">V0.3 Alpha</property>
+    <property name="version">V0.3.1 Alpha</property>
     <property name="comments" translatable="yes">This Program uses the esptool backend to flash .bin files
 onto the esp8266.</property>
     <property name="website">https://github.com/DGxInfinitY/Vault-Project</property>
@@ -319,8 +321,8 @@ onto the esp8266.</property>
     <property name="authors">Donovan Goodwin</property>
     <property name="documenters">Donovan Goodwin</property>
     <property name="artists">Donovan Goodwin</property>
-    <property name="logo_icon_name">utilities-terminal</property>
-    <property name="license_type">gpl-3-0</property>
+    <property name="logo"/>
+    <property name="license_type">lgpl-2-1</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="aboutdialog-vbox1">
         <property name="can_focus">False</property>
