@@ -5,10 +5,11 @@
   <object class="GtkAboutDialog" id="aboutdialog">
     <property name="name">aboutdialog</property>
     <property name="can_focus">False</property>
+    <property name="type">popup</property>
     <property name="window_position">center</property>
-    <property name="type_hint">dialog</property>
+    <property name="type_hint">normal</property>
     <property name="program_name">ESP Flasher</property>
-    <property name="version">V. 0.2 Alpha</property>
+    <property name="version">V0.2 Alpha</property>
     <property name="comments" translatable="yes">This Program uses the esptool backend to flash .bin files
 onto the esp8266.</property>
     <property name="website">https://github.com/DGxInfinitY/Vault-Project</property>
@@ -100,6 +101,21 @@ onto the esp8266.</property>
           </packing>
         </child>
         <child>
+          <object class="GtkSeparator" id="separator">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_left">35</property>
+            <property name="margin_right">35</property>
+            <property name="margin_top">2</property>
+            <property name="margin_bottom">2</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child>
           <object class="GtkBox" id="box4">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
@@ -144,7 +160,45 @@ onto the esp8266.</property>
             <property name="expand">True</property>
             <property name="fill">True</property>
             <property name="padding">6</property>
-            <property name="position">3</property>
+            <property name="position">5</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator" id="separator1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_left">35</property>
+            <property name="margin_right">35</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">6</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="box3">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkLabel" id="label5">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Select .bin file:</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="padding">8</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="padding">4</property>
+            <property name="position">7</property>
           </packing>
         </child>
         <child>
@@ -165,6 +219,18 @@ onto the esp8266.</property>
               </packing>
             </child>
             <child>
+              <object class="GtkSeparator" id="separator3">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="orientation">vertical</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkButton" id="button2">
                 <property name="label" translatable="yes">Upload to Board</property>
                 <property name="visible">True</property>
@@ -176,7 +242,7 @@ onto the esp8266.</property>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
                 <property name="padding">6</property>
-                <property name="position">1</property>
+                <property name="position">2</property>
               </packing>
             </child>
           </object>
@@ -184,7 +250,7 @@ onto the esp8266.</property>
             <property name="expand">True</property>
             <property name="fill">True</property>
             <property name="padding">6</property>
-            <property name="position">4</property>
+            <property name="position">8</property>
           </packing>
         </child>
         <child>
@@ -192,6 +258,8 @@ onto the esp8266.</property>
             <property name="name">status_bar</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_left">35</property>
+            <property name="margin_right">35</property>
             <property name="margin_start">10</property>
             <property name="margin_end">10</property>
             <property name="orientation">vertical</property>
@@ -202,7 +270,7 @@ onto the esp8266.</property>
             <property name="expand">False</property>
             <property name="fill">True</property>
             <property name="padding">5</property>
-            <property name="position">5</property>
+            <property name="position">9</property>
           </packing>
         </child>
         <child>
@@ -264,7 +332,7 @@ onto the esp8266.</property>
           <packing>
             <property name="expand">True</property>
             <property name="fill">True</property>
-            <property name="position">6</property>
+            <property name="position">10</property>
           </packing>
         </child>
       </object>
