@@ -2,7 +2,8 @@
 This is a Public test Repo for ESP Flasher.
 
 This Repo contains an Alpha version of the ESP Flasher Program developed by Donovan Goodwin (DGxInfinitY).
-This version of ESP Flasher is unusable as of Version 0.2.
+This version of ESP Flasher is unusable as of Version 0.3.
+
 ESP Flasher is built on:
 
 <code>Vala 0.34.8</code> and <code>Gtk3+</code> And on an AMD64 Linux box(elementary OS)
