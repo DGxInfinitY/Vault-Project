@@ -5,7 +5,7 @@
 using Gtk;
 
 /*
-// Here I am going to add the functions of the buttions
+// Here I am going to add the functions of the buttons
 // To allow for selecting, uploading, and monitoring
 // Of ESP operations.
 //
