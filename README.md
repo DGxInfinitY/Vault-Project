@@ -36,3 +36,8 @@ If you're on MacOS you can install vala and it's compiler using homebrew: <code>
 
 If you're on Windows you can install vala and it's compiler by following the info on this page:
 https://wiki.gnome.org/Projects/Vala/ValaOnWindows
+
+# Roadmap
+I am wanting to have the program in a working state by the end of this month if at all possible, it is going to be hard with
+my birthday being this month as well as my sister's, grandpa's, and brother's but I will try my hardest to get the back end
+functioning this month.

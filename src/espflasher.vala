@@ -1,20 +1,15 @@
+/*
+//Version 0.3 Alpha
+//ESPFlasher by Donovan Goodwin
+*/
 using Gtk;
 
-public void upload_clicked (Button source) {
-    //source.label = "Thank you!";
-}
-
-
-public void help_clicked (Button source) {
-    /* When window close signal received */
-    //Gtk.main_quit ();
-}
-
-//public void about_clicked (Button source) {
-    /* When window close signal received */
-//    aboutdialog();
-//}
-
+/*
+// Here I am going to add the functions of the buttions
+// To allow for selecting, uploading, and monitoring
+// Of ESP operations.
+//
+*/
 int main (string[] args) {
     Gtk.init (ref args);
 
