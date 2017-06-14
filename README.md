@@ -18,12 +18,12 @@ directory as the compiled binary. The program must be run from terminal so that 
 # How to compile for your platform
 I would recommend compiling using valac. Open a terminal in the location of the espflasher.vala (and espflasher.ui) file and type:
 
-<code>valac --pkg gtk+-3.0 espflasher.vala</code>
+<code>valac --pkg gtk+-3.0 --pkg granite --pkg gmodule-2.0 espflasher.vala --enable-version-header -X -rdynamic</code>
 
 This should complete with no errors, however to see what is really going on it may be useful to add the -v option to
 the command:
 
-<code>valac --pkg gtk+-3.0 espflasher.vala -v</code>
+<code>valac --pkg gtk+-3.0 --pkg granite --pkg gmodule-2.0 espflasher.vala -v --enable-version-header -X -rdynamic</code>
 
 If you're on a Debian based distro you can install vala by running these commands:
 
