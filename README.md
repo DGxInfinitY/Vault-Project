@@ -25,13 +25,13 @@ the command:
 
 <code>valac --pkg gtk+-3.0 --pkg granite --pkg gmodule-2.0 espflasher.vala -v --enable-version-header -X -rdynamic</code>
 
-If you're on a Debian based distro you can install vala by running these commands:
+If you're on a Debian based distro you can install vala and granite by running these commands:
 
 <code>sudo add-apt-repository ppa:vala-team</code>
 
-<code>sudo apt update && sudo apt install valac valac-dbg -y</code>
+<code>sudo apt update && sudo apt install valac valac-dbg libgranite-common -y</code>
 
-You can find how to install valac on your distro with a Google search. ie "How to install vala on [Insert Distro Here]"
+You can find how to install valac on your distro with a Google search. ie "How to install vala and granite on [Insert Distro Here]"
 
 If you're on MacOS you can install vala and it's compiler using homebrew: <code>brew install vala</code> in your terminal
 
