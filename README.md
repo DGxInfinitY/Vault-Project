@@ -6,7 +6,7 @@ This version of ESP Flasher is unusable as of Version 0.3.1.
 
 ESP Flasher is built on:
 
-<code>Vala 0.34.8</code> and <code>Gtk3+</code> And on an AMD64 Linux box(elementary OS)
+<code>Vala 0.34.8</code>, <code>Gtk3+</code>, and on an AMD64 Linux box(elementary OS)
 
 Anyone willing to compile a binary for different platforms can email me at ddg2goodwin@gmail.com and I will send instructions
 and add it to this repository.
